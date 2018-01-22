@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width , initial scale=1" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/mystyle.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- nvbar -->
+    <nav class="navbar navbar-default navbar-fixed-top ">
+        <div class="container">
+            <div class="navbar-header">
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+        </button>
+        <a href="~/Home/Index" class="navbar-brand">
+            
+
+            <img src="~/images/ima.jpg"  class="logo-size"  />
+        </a>
+        </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="~/Home/Index">
+                            <i class="glyphicon glyphicon-home"></i>
+                            الرئيسية
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Home/About">
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                            معلومات
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Home/Contact">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                            اتصل بنا
+
+                        </a>
+                    </li>
+                    <li>
+                  @using (Html.BeginForm("Search", "Home", FormMethod.Post)) {
+                          <input type = "text"  name = "SearchName" id = "SearchName" placeholder="ابحث هنا..." />
+                          <input type="submit" value="SearchName"  name = "SearchName"/>
+
+                        }
+
+                    </li>
+                </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                @*---partial login --*@
+                @Html.Partial("_login1")
+
+
+
+                </div>
+
+            </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    < div class="container ">
+        <div class="row">
+            @RenderBody()
+           
+        </div>
+        
+
+
+
+
+
+
+
+
+
+        @*<footer class="navbar navbar-fixed-bottom myfooter">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+
+
+                            <h3>
+                                <i class="glyphicon glyphicon-question-sign"></i>
+                                من نحن؟
+                            </h3>
+                            <p>
+                                . ويمكن اعتبار المبرمج مهندس برمجيات أو مطور برمجيات
+
+                            </p>
+
+
+
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <h3>
+                                <i class="glyphicon glyphicon-question-sign"></i>
+                                روابط هامة
+                            </h3>
+                            <ul>
+                                <li><a href="#">وظائف قطاع عام</a></li>
+                                <li><a href="#">وظائف قطاع خاص</a></li>
+                                <li><a href="#">وظائف قطاع بترول</a></li>
+
+
+
+                            </ul>
+
+                        </div>
+                        <div class="col-md-4">
+
+
+
+
+                            <h3>
+                                <i class="glyphicon glyphicon-question-sign"></i>
+                                تواصل معانا
+                            </h3>
+                            <ul>
+                                <li><a href="#">فيس بوك</a></li>
+                                <li><a href="#">تويتر</a></li>
+                                <li><a href="#">يوتيوب</a></li>
+
+
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+
+            </div>
+
+            </footer>
+
+            <div class="subfooter">
+                    <span>
+                        جميع الحقوق محفوظة لشركة التوما للبرمجيات ادارة مهندس احمد فراج
+                    </span>
+
+                </div>*@
+
+
+ 
+        <footer>
+            <div style="min-height: 250px;" class="footer" id="footer-sub">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5> تواصل معانا <i class="glyphicon glyphicon-envelope"></i></h5>
+                            <ul>
+                                <li><a href="https://www.facebook.com/">فيس بوك</a><hr></li>
+                                <li><a href="https://twitter.com/">تويتر</a><hr></li>
+                                <li><a href="https://www.youtube.com/">يوتيوب</a><hr></li>
+                                <li><a href="#">اترك لنا رسالة</a><hr></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>
+                                روابط مهمة
+                                <i class="glyphicon glyphicon-question-sign"></i>
+                            </h5>
+                            <ul>
+                                <li><a href="">وظائف قطاع عام</a><hr></li>
+                                <li><a href="">وظائف قطاع خاص</a><hr></li>
+                                <li><a href="">وظائف خارج البلاد</a><hr></li>
+                                <li><a href="">وظائف متنوعة</a><hr></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5> من نحن  <i class="glyphicon  glyphicon-globe"></i></h5>
+                            <ul>
+                                <li><a href="">أنشطتنا</a><hr></li>
+                                <li><a href="">موقعنا الخاص</a><hr></li>
+                                <li><a href="">ما نمتلكه</a><hr></li>
+                                <li><a href="">انضم الينا </a><hr></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <hr style="margin-bottom:0px; margin-top:30px; padding:0px;">
+                    <div class="row" id="sub-two">
+                        <div class="col-md-4">
+                            <div class="vertical-line text-center">
+                                <span class="glyphicon glyphicon-map-marker"></span>
+                                <h4>TRACK YOUR ORDER</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="vertical-line text-center">
+                                <span class="glyphicon glyphicon-refresh"></span>
+                                <h4>FREE & EASY RETURNS</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div style="margin:8px;" class="text-center">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <h4 style="color:#6d6c6c;">ONLINE CANCELLATIONS</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr style="margin-bottom:30px; margin-top:0px; padding:0px;">
+
+                </div>
+            </div>
+            <div style="min-height: 50px;" id="footer-main">
+                <ul>
+                    <li><a href=""><b>About Us</b></a></li>
+                    <li><a href=""><b>Partner with us</b></a></li>
+                    <li><a href=""><b>Terms & Conditions</b></a></li>
+                    <li><a href=""><b>Blog</b></a></li>
+                    <li><a href=""><b>Customer Service</b></a></li>
+                </ul>
+                <div id="social-menu">
+                    <ul>
+                        <li><a href=""><img style="max-width:18px; margin-top: -7px;" src=""></a></li>
+                        <li><a href=""><img style="max-width:18px; margin-top: -7px;" src=""></a></li>
+                        <li><a href=""><img style="max-width:18px; margin-top: -7px;" src=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+  
+
+
+
+
+        <script src="~/scripts/jquery.js"></script>
+
+        <script src="~/scripts/bootstrap.min.js"></script>
+@RenderSection("scripts",required:false)
+   
+        <script>
+            $("#SearchName").on({
+                focus:function() {
+                    $(this).css({
+                        "background-color": "#ccc",
+                        fontcolor:"red"
+
+
+
+                    });
+
+                },
+                blur:function() {
+
+
+                    $(this).css({
+                        "background-color": "#fff" ,
+                        fontcolor:"#000"
+
+
+                    });
+
+                }
+
+         
+
+            });
+
+
+
+
+  </script>
+
+
+
+
+
+</body>
+</html>
