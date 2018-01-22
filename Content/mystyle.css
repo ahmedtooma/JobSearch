@@ -1,0 +1,277 @@
+﻿@font-face{
+    font-family:myfont;
+    src:url('font/GE_SS_Two_Bold.otf')
+}
+@font-face {
+    font-family:myfont2;
+    src:url(font/DroidKufi-Regular.ttf);
+}
+
+
+body{
+    padding-top: 90px;
+    padding-bottom: 20px;
+     font-family: myfont;
+}
+
+
+
+.navbar-default {
+    background-color: #0c5c82;
+    border-color: #e7e7e7;
+   
+}
+
+
+.navbar-default .navbar-nav>li>a {
+    color: #e7e7e7;
+    font-family:myfont;
+    
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+  
+}
+
+
+.nav > li{
+
+    position:relative;
+        display:block;
+        height:75px;
+        padding-top:10px;
+}
+
+.myfooter {
+  background-color:cornflowerblue; 
+  padding-top:10px;
+    font-family:myfont;
+    text-align:justify;
+}
+
+
+
+
+.subfooter{
+
+       background-color:darkblue;
+       color:white;
+      padding:10px;
+       text-align:center;
+
+}
+.myfooter a {
+    color:azure;
+}
+.myfooter h3,ul,p{
+    margin-bottom: 20px;
+    font-family: myfont;
+    list-style-type: none;
+}
+/*------------------------------------------newfooter----------------*/
+.navbar-default .navbar-nav>li>a {
+    color: #ec5252;
+    font-family: myfont;
+    font-size:12px;
+}
+
+
+#footer-sub {
+    background-color: #709aaf;
+    border-top: 1px solid #735c5c;
+  
+
+
+}
+
+#footer-main{
+    background-color: #012b72;
+}
+
+#footer-sub h5{
+    color:#fdfdfd;
+    margin-top: 25px;
+    font-family:myfont;
+}
+
+#footer-sub ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+#footer-sub hr{
+    margin: 5px;
+
+}
+
+#footer-sub ul li{
+margin-left: -38px;
+}
+
+#footer-sub a:link {
+    text-decoration: none;
+    color:#fbfbfb;
+    font-size: 12px;
+}
+
+#footer-sub a:visited {
+    text-decoration: none;
+    color:#fdfdfd;
+}
+
+
+#footer-sub a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+
+#footer-sub a:active {
+    text-decoration: none;
+    color:#565656;
+}
+
+.vertical-line{
+    border-right: 1px solid #dbdbdb;
+    margin: 8px;
+    padding: 0px;
+}
+
+.glyphicon {
+    font-size: 35px;
+     color:#ddd;
+}
+
+#sub-two{
+    margin: 0px;
+    padding: 0px;
+}
+
+#sub-two .vertical-line h4{
+    color:#6d6c6c;
+}
+
+
+#footer-main ul{
+    list-style: none;
+}
+
+#footer-main ul li{
+    float:left;
+    text-decoration: none;
+    padding-left: 15px;
+    margin-top: 17px;
+}
+
+#footer-main a:link {
+    color:white;
+    font-size: 12px;
+}
+
+#footer-main a:visited {
+    color:white;
+}
+
+
+#footer-main a:hover {
+    text-decoration: none;
+    color: #00b9f5;
+}
+
+
+#footer-main a:active {
+    color:white;
+}
+
+.glyphicon-search{
+    font-size: 20px;
+}
+
+#social-menu{
+    float: right;
+   margin-right: 60px;
+}
+
+#side-padding{
+    padding: 0px;
+    margin: 0px;
+}
+
+.glyphicon-question-sign:before {
+    content: "\e085";
+    font-size:15px;
+    margin-left:3px;
+}
+.glyphicon-envelope:before {
+    content: "\2709";
+
+     font-size:15px;
+    margin-left:3px;
+
+
+}
+.glyphicon-globe:before {
+    content: "\e135";
+     font-size:15px;
+    margin-left:3px;
+}
+
+.glyphicon {
+    font-size: 15px;
+    margin-left: 3px;
+    color: #ddd;
+    padding-right: 7px;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*search ___________________________________________*/
+#SearchName {
+    width: 160px;
+    border: 2px solid #271717;
+    border-radius: 5px;
+    background-color: #f2e5ff;
+    background-image: url('../images/ss.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 12px 20px 12px 12px;
+        margin-top: 10px;
+            height: 30px;
+    transition: width 0.1s ease-in-out;
+}
+#SearchName:focus{
+    width: 100%;
+   
+}
+#s{
+font-size:100px;
+ color:#271717;
+
+}
+.navbar-user{
+    padding:10px;
+    padding-bottom:0px;
+    width:350px;
+
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+@media (min-width: 992px){
+    
+.col-md-3 {
+    width:35%;
+}
+}
